@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_sidebar" >
+
+    <ImageView
+        android:id="@+id/icon_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_off" />
+
+    <ImageView
+        android:id="@+id/icon_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/icon_off"
+        android:background="@drawable/divider_slide" />
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_logo1" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_line_slide" />
+
+        <RelativeLayout
+            android:id="@+id/rlRoomNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tvRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ROOM NO."
+                android:textColor="@color/tcl_prestige" />
+
+            <TextView
+                android:id="@+id/tvRoomValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvRoom"
+                android:text="02"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlRoomNo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_line_slide" />
+
+        <RelativeLayout
+            android:id="@+id/rlGRONo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tvGro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="ROOM NO.:"
+                android:textColor="@color/tcl_prestige" />
+
+            <TextView
+                android:id="@+id/tvGroValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="02"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlGRONo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_line_slide" />
+
+        <RelativeLayout
+            android:id="@+id/rlRMNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line2"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tvRM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="RM NO.:"
+                android:textColor="@color/tcl_prestige" />
+
+            <TextView
+                android:id="@+id/tvRMValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="02"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlRMNo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_line_slide" />
+
+        <RelativeLayout
+            android:id="@+id/rlStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="STATUS:"
+                android:textColor="@color/tcl_prestige" />
+
+            <TextView
+                android:id="@+id/tvStatusValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="02"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlStatus"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_line_slide" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line4"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_lock" >
+
+                <ImageView
+                    android:id="@+id/imgLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_heart" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rlLock"
+                android:background="@color/bg_login" >
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="BOOK NOW"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

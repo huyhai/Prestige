@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlLoginEd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/imgLogo"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rlLoginEd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <RelativeLayout
+                android:id="@+id/rledUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/rledUser1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ed_usser" >
+
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ic_users" />
+
+                    <ImageView
+                        android:id="@+id/imgsplah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/imgUser"
+                        android:background="@drawable/splash_login" />
+
+                    <EditText
+                        android:id="@+id/edUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/imgsplah"
+                        android:background="@null"
+                        android:hint="UserName" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/rledUser1"
+                    android:text="Save my password" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rledpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rledUser"
+                android:layout_marginTop="7dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rledpass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ed_usser" >
+
+                    <ImageView
+                        android:id="@+id/imgUser11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ic_pass" />
+
+                    <ImageView
+                        android:id="@+id/imgsplah1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/imgUser11"
+                        android:background="@drawable/splash_login" />
+
+                    <EditText
+                        android:id="@+id/edPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/imgsplah1"
+                        android:background="@null"
+                        android:hint="******"
+                        android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/rledpass1"
+                    android:background="@color/bg_lock" >
+
+                    <ImageView
+                        android:id="@+id/imgLock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_lock" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlLoginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rlLock"
+                    android:background="@color/bg_login" >
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="LOGIN" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
